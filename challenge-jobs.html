@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>jobs</title>
+	<link rel="stylesheet" type="text/css" href="challenge-css-map/challenge.css">
+</head>
+<body>
+<header>
+	<nav>
+		<ul>
+			<li><a href="challenge-home.html">Home</a></li>
+			<li><a href="challenge-over.html">Over</a></li>
+			<li><a href="challenge-jobs.html">Jobs</a></li>
+			<li><a href="challenge-Contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<img id="home-banner" src="jobs/jobs-banner2.jpg" alt="banner">
+</header>
+<main>
+ <div id="container">
+   <img id="img" src="images/img1.jpg">
+   <div id="left_holder">
+  <img onclick="slide(-1)" class="left" src="arrow_left.png" alt="left">
+   </div>	
+   <div id="Right_holder">
+   <img onclick="slide(1)" class="right" src="arrow_right.png" alt="right">
+  </div>
+ </div>
+ <script type="text/javascript">
+  var imagecount = 1;
+  var total = 4;
+
+  function slide(x) {
+  	var image = document.getElementById('img');
+  	 imagecount = imagecount + x;
+  	 if (imagecount > total) { imagecount = 1;}
+  	 if (imagecount < 1) { imagecount = total;}
+     image.src = "images/img"+ imagecount + ".jpg";
+  	
+  	 }
+ </script>
+
+	<article id="article4">
+		<h1>WERKEN BIJ ESPRESSOBAR CHAVEZ</h1>
+		<p>Espressobar Chavez is als een tweede huiskamer. Ons horeca-concept draait om koffie, health, genieten en gezelligheid. Floreer jij in zo’n ongedwongen sfeer en bezorg jij anderen graag een fijn moment in zijn of haar dag? Is koffie jouw middle name? Dan zou je zomaar in ons team kunnen passen. Scroll verder voor de vacatures of stuur ons een open sollicitatie.
+</p>
+
+	</article>
+	<article id="article5">
+		<h1>WIL JE WERKEN BIJ ESPRESSOBAR CHAVEZ? DAN IS DIT WAT WE VAN JE VERWACHTEN:</h1>
+		<ul>
+			<li>- Jij wilt gasten een fijn moment in hun dag bezorgen. Iedere klant, iedere dag weer.	</li>
+			<li>- Flexibele werktijden zijn voor jou geen probleem.</li>
+			<li>- Je pakt zaken met passie aan.	</li>
+			<li>- Je snapt ons concept en draagt het graag uit.</li>
+			<li>- Niet alleen de gasten, maar ook je collega’s kunnen rekenen op jouw glimlach.</li>
+		</ul>
+	</article>
+
+		
+
+</main>
